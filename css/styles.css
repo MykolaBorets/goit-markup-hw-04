@@ -143,22 +143,25 @@ img {
 }
 
 .navigation-item {
-  position: relative;
   color: var(--color-dark);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link {
   padding: 24px 0 24px;
-  position: relative;
-  color: var(--color-pressed-state);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link::after {
+.current-page {
+  position: relative;
+  color: var(--color-pressed-state);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current-page::after {
   content: "";
   position: absolute;
   left: 0;
@@ -619,7 +622,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin: 32px 16px 8px;
+  margin-bottom: 8px;
 }
 
 .portfolio-cards-text {
@@ -628,7 +631,6 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0px 16px 32px;
 }
 
 .cards-cover-wrap {
